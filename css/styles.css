@@ -10,6 +10,11 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px
 }
+audio{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #title{
   padding-top: 10px;
   padding-bottom: 10px;

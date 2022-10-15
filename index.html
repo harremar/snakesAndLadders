@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="css/styles.css">
 <body>
 
+    <!-- music if the layer wants it -->
+    <audio id="audio" autoplay loop  controls src="music/backgroundmusic.mp3"></audio>
+
     <div id="title">???</div>
 
     <!-- Creating Instructions -->
@@ -23,14 +26,13 @@
             <div id="dieBlocker"></div>
         </div>
 
-        <!-- <div id="movesLeft">You have this many moves left: </div> -->
         <div class="buttons">
             <!-- button to move to next player  -->
          <button id="newTurn" onclick="myRoll.next()">Move to next player</button>
          </div>
         
 
-
+<!-- the board -->
         <div class="board">
             <div class="row">
                 <div class="tile" id="tile100" data-number="100" style="background-color:#d5a8ea; font-weight: bold;">100</div>
@@ -156,8 +158,6 @@
 
             <div class="player" id="player1"></div>
             <div class="player" id="player2"></div>
-            <div class="player" id="player3"></div>
-            <div class="player" id="player4"></div>
 
 
             <svg id="snake1"></svg>
@@ -177,6 +177,7 @@
         
     </div>
 
+          <!-- the start page -->
     <div id="startScreen">
             <h4>Created by Marielle Harrell</h4>
             <h6>NEWM-N320 Project 1</h6>
@@ -191,13 +192,14 @@
                 <p>- First player to get to space <span style="font-weight: bold;">100</span> is the winner</p>
             </div>
            
+      
         <div class="startButtons">
             <button id="startGame" onclick="startGame()">Start Game</button>
         </div>
 
     </div>
 
-
+<!-- the winners page -->
     <div id="winnerMessageBlock">
         <div id="winnerMessage"> Congrats Player ___ You Won!
         </div>
@@ -209,8 +211,6 @@
 
      <!-- connecting greensock and our app.js -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
- 
-     <script src="app/board.js"></script>
      <script src="app/app.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
 </body>

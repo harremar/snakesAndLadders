@@ -383,6 +383,20 @@ class diceRoll extends randomPicker {
           });
         }, 2000);
         p1spotMove = 58;
+      } else if (p1spotMove === 107) {
+        TweenMax.to(p1, {
+          duration: 0.3 * moving,
+          y: -450,
+          x: 300,
+        });
+        p1spotMove = 91;
+      } else if (p1spotMove === 106) {
+        TweenMax.to(p1, {
+          duration: 0.3 * moving,
+          y: -450,
+          x: 300,
+        });
+        p1spotMove = 92;
       } else if (p1spotMove === 105) {
         TweenMax.to(p1, {
           duration: 0.3 * moving,
@@ -548,6 +562,20 @@ class diceRoll extends randomPicker {
           });
         }, 2000);
         p2spotMove = 58;
+      } else if (p2spotMove === 107) {
+        TweenMax.to(p2, {
+          duration: 0.3 * moving,
+          y: -450,
+          x: 300,
+        });
+        p2spotMove = 91;
+      } else if (p2spotMove === 106) {
+        TweenMax.to(p2, {
+          duration: 0.3 * moving,
+          y: -450,
+          x: 300,
+        });
+        p2spotMove = 91;
       } else if (p2spotMove === 105) {
         TweenMax.to(p2, {
           duration: 0.3 * moving,
